@@ -25,6 +25,7 @@ function Index() {
               <th>Description</th>
               <th>Price</th>
               <th>Rating</th>
+              <th>Action</th>
             </tr>
           </thead>
 

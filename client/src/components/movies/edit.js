@@ -51,8 +51,7 @@ function Edit(props) {
               name="title"
               required="required"
               onChange={handleInputChange}
-              name="title"
-              defaultValue={input.title}
+              defaultValue={inputs.title}
             />
           </div>
 

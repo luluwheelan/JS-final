@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 
 function Show(props) {
-  const [movie, setMovies] = useState({});
+  const [movie, setMovie] = useState({});
   useEffect(() => {
     Axios.get(`/api/movies/${props.match.params.id}`)
       .then(result => setMovie(result.data))

@@ -5,10 +5,15 @@ import { NotificationProvider } from "./notification_context";
 import Notifier from "./notifier";
 
 export default function App() {
-  const [notification, setNotification] = useState({ status: null, message: null });
+  const [notification, setNotification] = useState({
+    status: null,
+    message: null
+  });
 
   return (
-    <NotificationProvider value={{ notification: notification, setNotification: setNotification }}>
+    <NotificationProvider
+      value={{ notification: notification, setNotification: setNotification }}
+    >
       <MainNav />
       <Notifier />
       <Routes />
